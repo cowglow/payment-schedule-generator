@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  frontend:
+    image: cowglow/payment-schedule-generator:${IMAGE_TAG}
+    build:
+      context: "services/frontend"
+      dockerfile: "Dockerfile.dev"
+    volumes:
+      - ./services/frontend/package.json:/app/package.json
+      - ./services/frontend/src:/app/src
+      - ./services/frontend/static:/app/static
+      - yarn-cache:/usr/local-share/.cache/yarn
+    ports:
+      - "3000:3000"
+
+volumes:
+  yarn-cache:
