@@ -11,8 +11,8 @@ export const getMonthlyPayments = (startDate: Date, duration: number) => {
 };
 
 const getMidMonthDaysArray = (start: Date, end: Date) => {
-  const dateArray: (string | Date)[] = [];
-  dateArray.push("");
+  const dateArray: (undefined | Date)[] = [];
+  dateArray.push(undefined);
 
   let current = addMonths(start, 1); // Next month
 

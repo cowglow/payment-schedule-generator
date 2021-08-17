@@ -34,7 +34,9 @@ export const ScheduleTable: React.FC<ScheduleTableProps> = ({
           <TableRow key={index}>
             <TableCell>{getMonthName(data.salary[entry].getMonth())}</TableCell>
             <TableCell>{data.salary[entry].toDateString()}</TableCell>
-            <TableCell>{JSON.stringify(data.bonuses[entry])}</TableCell>
+            <TableCell>
+              {data.bonuses[entry]?.toDateString() ?? "---"}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

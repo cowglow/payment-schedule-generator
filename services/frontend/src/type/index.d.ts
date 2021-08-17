@@ -6,5 +6,5 @@ type GeneratorFormData = {
 
 type Payments = {
   salary: Date[];
-  bonuses: (string | Date)[];
+  bonuses: (undefined | Date)[];
 };
