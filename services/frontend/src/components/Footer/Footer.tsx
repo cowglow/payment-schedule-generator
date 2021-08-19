@@ -1,11 +1,8 @@
 import Typography from "@material-ui/core/Typography";
-import { Link, makeStyles } from "@material-ui/core";
+import { Link, makeStyles, ThemeOptions } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    position: "absolute",
-    bottom: 0,
-    width: "100%",
     padding: theme.spacing(2, 3),
   },
 }));

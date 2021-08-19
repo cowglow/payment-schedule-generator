@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 export const GeneratorForm: React.FC<GeneratorFormProps> = ({ onSubmit }) => {
   const classes = useStyles();
   const [employeeId, setEmployeeId] = useState("04-1-2019");
-  const [monthDuration, setMonthDuration] = useState(6);
+  const [monthDuration, setMonthDuration] = useState(12);
   const [startDate, dateChangeHandler] = useState<any>(new Date());
 
   const processData = (event: SyntheticEvent) => {
