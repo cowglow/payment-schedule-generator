@@ -1,5 +1,6 @@
 {
   "name": "payment-schedule-generator",
+  "homepage": "https://cowglow.github.io/payment-schedule-generator/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

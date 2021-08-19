@@ -1,5 +1,5 @@
 import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core";
+import { Link, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -15,7 +15,12 @@ export const Footer = () => {
   return (
     <footer className={classes.footer}>
       <Typography variant="body2" color="textSecondary" align="center">
-        GitHub Repo Link Goes Here
+        <Link
+          href="https://github.com/cowglow/payment-schedule-generator"
+          rel="noreferrer"
+        >
+          GitHub Repo
+        </Link>
       </Typography>
     </footer>
   );
